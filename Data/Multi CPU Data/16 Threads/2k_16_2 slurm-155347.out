@@ -1,0 +1,10 @@
+
+Creating square matricies of size 2000...
+
+Initializing random values...
+
+Generating matrix C by square matrix multiplication (C = A•B) with 16 threads and a chunk size of 125...
+
+Matrices of square size 2000 were sequentially created & initialized in 0.170118 seconds.
+
+Matrices of square size 2000 were multiplied in parallel in 3.88912 seconds.

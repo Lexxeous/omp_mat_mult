@@ -1,0 +1,13 @@
+MacBook Pro Sequential Execuation TIme:
+
+Square Matrix Size -> Execution Time
+500 -> 1s
+1000 -> 19s
+1500 -> 41s
+2000 -> 165s
+2500 -> 292s
+3000 -> 557s
+3500 -> 1174s
+4000 -> 2528s
+4500 -> s
+5000 -> 6498s

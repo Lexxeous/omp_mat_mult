@@ -9,7 +9,7 @@
 using namespace std;
 
 // prototype function(s)
-double rangeRandomDouble(double low, double high);
+double range_rand_double(double low, double high);
 
 // start main
 int main(int argc, char* argv[])
@@ -28,8 +28,8 @@ int main(int argc, char* argv[])
 	int mat_size = atoi(argv[1]); // user specified matrix size
 	int thread_count = atoi(argv[2]); // user specified thread count
 	int chunk_size = mat_size / thread_count;
-	double doubleLowerBound = 0;
-	double doubleUpperBound = 500000;
+	double double_lower_bound = 0;
+	double double_upper_bound = 500000;
 
 
 	srand(time(NULL)); // randomize seed based on current time
@@ -46,8 +46,8 @@ int main(int argc, char* argv[])
 	{
 		for(int j = 0; j < mat_size; j++)
 		{
-			A[i][j] = rangeRandomDouble(doubleLowerBound, doubleUpperBound);
-			B[i][j] = rangeRandomDouble(doubleLowerBound, doubleUpperBound);
+			A[i][j] = range_rand_double(double_lower_bound, double_upper_bound);
+			B[i][j] = range_rand_double(double_lower_bound, double_upper_bound);
 		}
 	}
 
@@ -107,7 +107,7 @@ int main(int argc, char* argv[])
 }
 
 
-double rangeRandomDouble(double low, double high)
+double range_rand_double(double low, double high)
 {
   double range = high - low; // get the range of values
   return (rand() / double (RAND_MAX) * (range - 1)) + low; // return a random double between high and low
